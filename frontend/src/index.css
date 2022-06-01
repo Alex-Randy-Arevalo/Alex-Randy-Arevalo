@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  height: 100vh;
+}
+
+.card .close {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 0;
+  padding: 2px 15px 6px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: #fff;
+}
+
+.card:hover .close {
+  opacity: 1;
+  transition: 1s;
+}
+
+.card .edit {
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: 46px;
+  align-items: center;
+  justify-content: end;
+  padding: 2px 15px 6px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  color: #fff;
+}
+
+.card:hover .edit {
+  opacity: 1;
+  transition: 1s;
+}
+
+/* [1] The container */
+.img-hover-zoom {
+  width: 100%;
+  height: auto;
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.1);
+}
+
+.loadingSpinnerContainer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 5000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.loadingSpinner {
+  width: 64px;
+  height: 64px;
+  border: 8px solid;
+  border-color: #000 transparent #555 transparent;
+  border-radius: 50%;
+  animation: spin 1.2s linear infinite;
+}
