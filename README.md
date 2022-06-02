@@ -1,11 +1,24 @@
 # Mern-Template
-Config files for my GitHub profile.
 
-Install dependencies
+This is the mern app template
 
-Backend deps
-<br> npm install
+## Usage
 
-Frontend deps
-<br> cd frontend
-<br> npm install
+Rename the .envexample to .env and add your MONGO_URI
+
+### Install dependencies
+
+```
+# Backend deps
+npm install
+
+# Frontend deps
+cd frontend
+npm install
+```
+
+### Run Server
+
+```
+npm run server
+```
