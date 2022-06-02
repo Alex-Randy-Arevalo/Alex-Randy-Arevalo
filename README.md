@@ -1,7 +1,7 @@
 # Mern-Template
 Config files for my GitHub profile.
 
-# Install dependencies
+Install dependencies
 
 Backend deps
 <br> npm install
