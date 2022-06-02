@@ -4,8 +4,8 @@ Config files for my GitHub profile.
 # Install dependencies
 
 Backend deps
-*npm install
+<br> npm install
 
 Frontend deps
-*cd frontend
-*npm install
+<br> cd frontend
+<br> npm install
