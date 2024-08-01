@@ -46,13 +46,11 @@ function Register() {
         if (password !== password2) {
             toast.error('Password do not match')
         } else {
-            console.log('else');
             const userData = {
                 name,
                 email,
                 password,
             }
-
             dispatch(register(userData))
         }
     }
